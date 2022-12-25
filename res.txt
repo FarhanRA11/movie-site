@@ -1,0 +1,44 @@
+@meta
+    operation:
+    requestId:
+    serviceTimeMs:
+@type:
+query:
+results*
+    0
+        id:
+        image
+            height:
+            width:
+            id:
+            url:
+        principals*
+            0
+                billing:
+                category:
+                characters*
+                    0:
+                    1:
+                    2:
+                disambiguation:
+                id:
+                legacyNameText:
+                name:
+                roles*
+                    0
+                        character:
+                        characterId:
+                    1
+                    2
+            1
+            2
+        runningTimeInMinutes:
+        title:
+        titleType:
+        year:
+    1
+    2
+types*
+    0:
+    1:
+    2:
