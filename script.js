@@ -46,8 +46,6 @@ function show(data) {
 }
 
 window.onload = function(){
-	let str = String(document.getElementById('input_query').value);
-	get_data(str);
 
 	var button = document.getElementById('button');
 	button.onclick = function(){
