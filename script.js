@@ -33,9 +33,9 @@ function show(data) {
 						<img src="" alt="image" id="image${i}">
 					</div>
 					<div id="desc">
-						<div>id: ${String(data.results[i].id).slice(7,-1)}</div>
 						<div id="title">${data.results[i].title}</div>
 						<div id="type">${data.results[i].year} ${data.results[i].titleType}</div>
+						<div id="id">id: ${String(data.results[i].id).slice(7,-1)}</div>
 					</div>
 				</div>`
 
@@ -46,14 +46,16 @@ function show(data) {
 }
 
 window.onload = function(){
+	let query = String(document.getElementById('input_query').value);
+	get_data(query);
 
 	var button = document.getElementById('button');
 	button.onclick = function(){
-		let str = String(document.getElementById('input_query').value);
+		let query = String(document.getElementById('input_query').value);
 		reset();
-		if(str.length){
-			alert(`search ${str}`);
-			get_data(str);
+		if(query.length){
+			alert(`search ${query}`);
+			get_data(query);
 		}
 	}
 }
