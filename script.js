@@ -21,11 +21,14 @@ async function get_data(q){
 	show(data);
 }
 
+var title_id;
 function show(data) {
 	for(let i=0; i<=20; i++){
 		if(String(data.results[i].id).includes('title') && 
 			'image' in data.results[i]
 		){
+			title_id = String(data.results[i].id).slice(7,-1)
+			
 			var tab = 
 
 				`<div id="tab">
@@ -35,12 +38,20 @@ function show(data) {
 					<div id="desc">
 						<div id="title">${data.results[i].title}</div>
 						<div id="type">${data.results[i].year} ${data.results[i].titleType}</div>
-						<div id="id">title id: ${String(data.results[i].id).slice(7,-1)}</div>
+						
+						<a id="syn${i}" href="">
+							<button>
+								synopsis
+							</button>
+						</a>
+
+						<div id="id">id: ${title_id}</div>
 					</div>
 				</div>`
 
 			document.getElementById('result').innerHTML += tab;
 			document.getElementById(`image${i}`).src = data.results[i].image.url;
+			document.getElementById(`syn${i}`).href = 'http://www.google.com'
 		}
 	}
 }
