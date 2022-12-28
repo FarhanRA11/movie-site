@@ -35,7 +35,7 @@ function show(data) {
 					<div id="desc">
 						<div id="title">${data.results[i].title}</div>
 						<div id="type">${data.results[i].year} ${data.results[i].titleType}</div>
-						<div id="id">id: ${String(data.results[i].id).slice(7,-1)}</div>
+						<div id="id">title id: ${String(data.results[i].id).slice(7,-1)}</div>
 					</div>
 				</div>`
 
