@@ -2,8 +2,227 @@ function reset(){
 	document.getElementById('result').innerHTML = '';
 }
 
-const data = 
 
+const data = 
+{
+    "@meta": {
+        "operation": "Search",
+        "requestId": "b317929b-ef78-4a6b-a94c-051ac2acf92d",
+        "serviceTimeMs": 92.643765
+    },
+    "@type": "imdb.api.find.response",
+    "query": "game",
+    "results": [
+        {
+            "id": "/title/tt0944947/",
+            "image": {
+                "height": 1500,
+                "id": "/title/tt0944947/images/rm4204167425",
+                "url": "https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg",
+                "width": 1102
+            },
+            "runningTimeInMinutes": 57,
+            "nextEpisode": "/title/tt1480055/",
+            "numberOfEpisodes": 73,
+            "seriesEndYear": 2019,
+            "seriesStartYear": 2011,
+            "title": "Game of Thrones",
+            "titleType": "tvSeries",
+            "year": 2011,
+            "principals": [
+                {
+                    "id": "/name/nm3592338/",
+                    "legacyNameText": "Clarke, Emilia",
+                    "name": "Emilia Clarke",
+                    "category": "actress",
+                    "characters": [
+                        "Daenerys Targaryen"
+                    ],
+                    "endYear": 2019,
+                    "episodeCount": 62,
+                    "roles": [
+                        {
+                            "character": "Daenerys Targaryen",
+                            "characterId": "/character/ch0158597/"
+                        }
+                    ],
+                    "startYear": 2011
+                },
+                {
+                    "id": "/name/nm0227759/",
+                    "legacyNameText": "Dinklage, Peter",
+                    "name": "Peter Dinklage",
+                    "category": "actor",
+                    "characters": [
+                        "Tyrion Lannister"
+                    ],
+                    "endYear": 2019,
+                    "episodeCount": 67,
+                    "roles": [
+                        {
+                            "character": "Tyrion Lannister",
+                            "characterId": "/character/ch0146096/"
+                        }
+                    ],
+                    "startYear": 2011
+                },
+                {
+                    "id": "/name/nm3229685/",
+                    "legacyNameText": "Harington, Kit",
+                    "name": "Kit Harington",
+                    "category": "actor",
+                    "characters": [
+                        "Jon Snow"
+                    ],
+                    "endYear": 2019,
+                    "episodeCount": 62,
+                    "roles": [
+                        {
+                            "character": "Jon Snow",
+                            "characterId": "/character/ch0155777/"
+                        }
+                    ],
+                    "startYear": 2011
+                }
+            ]
+        },
+        {
+            "id": "/title/tt10919420/",
+            "image": {
+                "height": 2048,
+                "id": "/title/tt10919420/images/rm2766402049",
+                "url": "https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
+                "width": 1382
+            },
+            "runningTimeInMinutes": 55,
+            "nextEpisode": "/title/tt11979940/",
+            "numberOfEpisodes": 10,
+            "seriesStartYear": 2021,
+            "title": "Squid Game",
+            "titleType": "tvSeries",
+            "year": 2021,
+            "principals": [
+                {
+                    "id": "/name/nm0497631/",
+                    "legacyNameText": "Jung-jae, Lee",
+                    "name": "Lee Jung-jae",
+                    "category": "actor",
+                    "characters": [
+                        "Seong Gi-hun"
+                    ],
+                    "endYear": 2021,
+                    "episodeCount": 10,
+                    "roles": [
+                        {
+                            "character": "Seong Gi-hun"
+                        }
+                    ],
+                    "startYear": 2021
+                },
+                {
+                    "id": "/name/nm7676537/",
+                    "legacyNameText": "Hae-soo, Park",
+                    "name": "Park Hae-soo",
+                    "category": "actor",
+                    "characters": [
+                        "Cho Sang-woo"
+                    ],
+                    "endYear": 2021,
+                    "episodeCount": 9,
+                    "roles": [
+                        {
+                            "character": "Cho Sang-woo"
+                        }
+                    ],
+                    "startYear": 2021
+                },
+                {
+                    "id": "/name/nm9475707/",
+                    "legacyNameText": "Hoyeon",
+                    "name": "Hoyeon",
+                    "category": "actress",
+                    "characters": [
+                        "Kang Sae-byeok"
+                    ],
+                    "endYear": 2021,
+                    "episodeCount": 8,
+                    "roles": [
+                        {
+                            "character": "Kang Sae-byeok"
+                        }
+                    ],
+                    "startYear": 2021
+                }
+            ]
+        },
+        {
+            "disambiguation": "I",
+            "id": "/title/tt2704998/",
+            "image": {
+                "height": 2048,
+                "id": "/title/tt2704998/images/rm3186446592",
+                "url": "https://m.media-amazon.com/images/M/MV5BMjI3ODkzNDk5MF5BMl5BanBnXkFtZTgwNTEyNjY2NDM@._V1_.jpg",
+                "width": 1382
+            },
+            "runningTimeInMinutes": 100,
+            "title": "Game Night",
+            "titleType": "movie",
+            "year": 2018,
+            "principals": [
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm0000867/",
+                    "legacyNameText": "Bateman, Jason (I)",
+                    "name": "Jason Bateman",
+                    "billing": 1,
+                    "category": "actor",
+                    "characters": [
+                        "Max"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Max"
+                        }
+                    ]
+                },
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm1046097/",
+                    "legacyNameText": "McAdams, Rachel (I)",
+                    "name": "Rachel McAdams",
+                    "billing": 2,
+                    "category": "actress",
+                    "characters": [
+                        "Annie"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Annie"
+                        }
+                    ]
+                },
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm0151419/",
+                    "legacyNameText": "Chandler, Kyle (I)",
+                    "name": "Kyle Chandler",
+                    "billing": 3,
+                    "category": "actor",
+                    "characters": [
+                        "Brooks"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Brooks"
+                        }
+                    ]
+                }
+            ]
+        }
+	]
+}
+
+/*
 const options = {
 	method: 'GET',
 	headers: {
@@ -22,6 +241,7 @@ async function get_data(q){
 
 	show(data);
 }
+*/
 
 var title_id;
 function show(data) {
@@ -59,6 +279,7 @@ function show(data) {
 }
 
 window.onload = function(){
+	/*
 	let query = String(document.getElementById('input_query').value);
 	get_data(query);
 
@@ -71,4 +292,8 @@ window.onload = function(){
 			get_data(query);
 		}
 	}
+	*/
+
+	reset()
+	show(data)
 }

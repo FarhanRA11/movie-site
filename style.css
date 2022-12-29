@@ -11,6 +11,11 @@ header{
     align-items: center;
 }
 
+#logo{
+    border: none;
+    max-width: 250px;
+}
+
 #name{
     font-size: 50px;
     align-items: baseline;
@@ -19,19 +24,20 @@ header{
 #query{
     display: flex;
     align-items: baseline;    
+    margin-left: 50px;
 }
 
 #input_query{
     font-size: 15px;
-    margin-left: 50px;
     background-color: #2d2d2d;
     border: 3px solid #da4141;
     outline: none;
     color: #dcdcdc;
     border-radius: 25px;
     padding: 0px 10px 0px 10px;
-    width: calc(100vw - 700px);
-    min-width: 850px;
+    width: 850px;
+    max-width: calc(100vw - 500px);
+    min-width: 50px;
     height: 40px;
 }
 
@@ -63,7 +69,7 @@ header{
 #tab{
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin: 10px calc(50vw - 950px) 10px calc(50vw - 950px);
     background-color: #2d2d2d;
     border-radius: 15px;
 }
@@ -116,8 +122,8 @@ button{
     height: fit-content;
     border-radius: 3px;
     border: none;
-    padding: 10px;
-    font-size: 20px;
+    padding: 8px;
+    font-size: 17px;
 }
 
 a{
@@ -136,7 +142,28 @@ button:hover{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1920px){
+    #tab{
+        margin: 10px;
+    }
+}
+
 @media only screen and (max-width: 720px) {
+    header{
+        flex-direction: column;
+    }
+
+    #query{
+        margin: 25px 0px 25px 0px;
+    }
+
+    #input_query{
+        max-width: 500px;
+        width: 850px;
+        max-width: calc(100vw - 250px);
+        min-width: 50px;
+    }
+
     #tab{
         flex-direction: column;
         align-items: center;
