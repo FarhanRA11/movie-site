@@ -1,14 +1,16 @@
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': atob('MDkzNzdiNzEyMW1zaDQ4ZTk2OWRjMGM1ZTBmNHAxM2RkMDJqc25jNjllNTI0YTBhZmU='),
-		'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
-	}
-};
-
 function reset(){
 	document.getElementById('result').innerHTML = '';
 }
+
+const data = 
+
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '91f666ff61msh4545f09d7eb23ddp1eec0cjsn308767ebedc2',
+		'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
+	}
+};
 
 async function get_data(q){
 	let q_fix = String(q).replace(/\s/g, '%20');
@@ -39,11 +41,11 @@ function show(data) {
 						<div id="title">${data.results[i].title}</div>
 						<div id="type">${data.results[i].year} ${data.results[i].titleType}</div>
 						
-						<a id="syn${i}" href="">
-							<button>
+						<button>
+							<a id="syn${i}" href="">
 								synopsis
-							</button>
-						</a>
+							</a>
+						</button>
 
 						<div id="id">id: ${title_id}</div>
 					</div>
@@ -60,7 +62,7 @@ window.onload = function(){
 	let query = String(document.getElementById('input_query').value);
 	get_data(query);
 
-	var button = document.getElementById('button');
+	var button = document.getElementById('submit_query');
 	button.onclick = function(){
 		let query = String(document.getElementById('input_query').value);
 		reset();

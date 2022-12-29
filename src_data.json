@@ -1,0 +1,1410 @@
+{
+    "@meta": {
+        "operation": "Search",
+        "requestId": "b317929b-ef78-4a6b-a94c-051ac2acf92d",
+        "serviceTimeMs": 92.643765
+    },
+    "@type": "imdb.api.find.response",
+    "query": "game",
+    "results": [
+        {
+            "id": "/title/tt0944947/",
+            "image": {
+                "height": 1500,
+                "id": "/title/tt0944947/images/rm4204167425",
+                "url": "https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg",
+                "width": 1102
+            },
+            "runningTimeInMinutes": 57,
+            "nextEpisode": "/title/tt1480055/",
+            "numberOfEpisodes": 73,
+            "seriesEndYear": 2019,
+            "seriesStartYear": 2011,
+            "title": "Game of Thrones",
+            "titleType": "tvSeries",
+            "year": 2011,
+            "principals": [
+                {
+                    "id": "/name/nm3592338/",
+                    "legacyNameText": "Clarke, Emilia",
+                    "name": "Emilia Clarke",
+                    "category": "actress",
+                    "characters": [
+                        "Daenerys Targaryen"
+                    ],
+                    "endYear": 2019,
+                    "episodeCount": 62,
+                    "roles": [
+                        {
+                            "character": "Daenerys Targaryen",
+                            "characterId": "/character/ch0158597/"
+                        }
+                    ],
+                    "startYear": 2011
+                },
+                {
+                    "id": "/name/nm0227759/",
+                    "legacyNameText": "Dinklage, Peter",
+                    "name": "Peter Dinklage",
+                    "category": "actor",
+                    "characters": [
+                        "Tyrion Lannister"
+                    ],
+                    "endYear": 2019,
+                    "episodeCount": 67,
+                    "roles": [
+                        {
+                            "character": "Tyrion Lannister",
+                            "characterId": "/character/ch0146096/"
+                        }
+                    ],
+                    "startYear": 2011
+                },
+                {
+                    "id": "/name/nm3229685/",
+                    "legacyNameText": "Harington, Kit",
+                    "name": "Kit Harington",
+                    "category": "actor",
+                    "characters": [
+                        "Jon Snow"
+                    ],
+                    "endYear": 2019,
+                    "episodeCount": 62,
+                    "roles": [
+                        {
+                            "character": "Jon Snow",
+                            "characterId": "/character/ch0155777/"
+                        }
+                    ],
+                    "startYear": 2011
+                }
+            ]
+        },
+        {
+            "id": "/title/tt10919420/",
+            "image": {
+                "height": 2048,
+                "id": "/title/tt10919420/images/rm2766402049",
+                "url": "https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
+                "width": 1382
+            },
+            "runningTimeInMinutes": 55,
+            "nextEpisode": "/title/tt11979940/",
+            "numberOfEpisodes": 10,
+            "seriesStartYear": 2021,
+            "title": "Squid Game",
+            "titleType": "tvSeries",
+            "year": 2021,
+            "principals": [
+                {
+                    "id": "/name/nm0497631/",
+                    "legacyNameText": "Jung-jae, Lee",
+                    "name": "Lee Jung-jae",
+                    "category": "actor",
+                    "characters": [
+                        "Seong Gi-hun"
+                    ],
+                    "endYear": 2021,
+                    "episodeCount": 10,
+                    "roles": [
+                        {
+                            "character": "Seong Gi-hun"
+                        }
+                    ],
+                    "startYear": 2021
+                },
+                {
+                    "id": "/name/nm7676537/",
+                    "legacyNameText": "Hae-soo, Park",
+                    "name": "Park Hae-soo",
+                    "category": "actor",
+                    "characters": [
+                        "Cho Sang-woo"
+                    ],
+                    "endYear": 2021,
+                    "episodeCount": 9,
+                    "roles": [
+                        {
+                            "character": "Cho Sang-woo"
+                        }
+                    ],
+                    "startYear": 2021
+                },
+                {
+                    "id": "/name/nm9475707/",
+                    "legacyNameText": "Hoyeon",
+                    "name": "Hoyeon",
+                    "category": "actress",
+                    "characters": [
+                        "Kang Sae-byeok"
+                    ],
+                    "endYear": 2021,
+                    "episodeCount": 8,
+                    "roles": [
+                        {
+                            "character": "Kang Sae-byeok"
+                        }
+                    ],
+                    "startYear": 2021
+                }
+            ]
+        },
+        {
+            "disambiguation": "I",
+            "id": "/title/tt2704998/",
+            "image": {
+                "height": 2048,
+                "id": "/title/tt2704998/images/rm3186446592",
+                "url": "https://m.media-amazon.com/images/M/MV5BMjI3ODkzNDk5MF5BMl5BanBnXkFtZTgwNTEyNjY2NDM@._V1_.jpg",
+                "width": 1382
+            },
+            "runningTimeInMinutes": 100,
+            "title": "Game Night",
+            "titleType": "movie",
+            "year": 2018,
+            "principals": [
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm0000867/",
+                    "legacyNameText": "Bateman, Jason (I)",
+                    "name": "Jason Bateman",
+                    "billing": 1,
+                    "category": "actor",
+                    "characters": [
+                        "Max"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Max"
+                        }
+                    ]
+                },
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm1046097/",
+                    "legacyNameText": "McAdams, Rachel (I)",
+                    "name": "Rachel McAdams",
+                    "billing": 2,
+                    "category": "actress",
+                    "characters": [
+                        "Annie"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Annie"
+                        }
+                    ]
+                },
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm0151419/",
+                    "legacyNameText": "Chandler, Kyle (I)",
+                    "name": "Kyle Chandler",
+                    "billing": 3,
+                    "category": "actor",
+                    "characters": [
+                        "Brooks"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Brooks"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "/title/tt0119174/",
+            "image": {
+                "height": 2190,
+                "id": "/title/tt0119174/images/rm1130367745",
+                "url": "https://m.media-amazon.com/images/M/MV5BNWQ2ODFhNWItNTA4NS00MzkyLTgyYzUtZjlhYWE5MmEzY2Q1XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg",
+                "width": 1458
+            },
+            "runningTimeInMinutes": 129,
+            "title": "The Game",
+            "titleType": "movie",
+            "year": 1997,
+            "principals": [
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm0000140/",
+                    "legacyNameText": "Douglas, Michael (I)",
+                    "name": "Michael Douglas",
+                    "billing": 1,
+                    "category": "actor",
+                    "characters": [
+                        "Nicholas Van Orton"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Nicholas Van Orton",
+                            "characterId": "/character/ch0006626/"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm0000679/",
+                    "legacyNameText": "Unger, Deborah Kara",
+                    "name": "Deborah Kara Unger",
+                    "billing": 3,
+                    "category": "actress",
+                    "characters": [
+                        "Christine"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Christine",
+                            "characterId": "/character/ch0006627/"
+                        }
+                    ]
+                },
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm0000576/",
+                    "legacyNameText": "Penn, Sean (I)",
+                    "name": "Sean Penn",
+                    "billing": 2,
+                    "category": "actor",
+                    "characters": [
+                        "Conrad"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Conrad",
+                            "characterId": "/character/ch0006625/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "/title/tt4057998/",
+            "image": {
+                "height": 802,
+                "id": "/title/tt4057998/images/rm4087019265",
+                "url": "https://m.media-amazon.com/images/M/MV5BZjYyMDVhMzEtNmM4ZS00YzliLWExOWEtMzRjZmFkZTk2YjI0XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
+                "width": 1431
+            },
+            "runningTimeInMinutes": 30,
+            "nextEpisode": "/title/tt15137988/",
+            "numberOfEpisodes": 22,
+            "seriesStartYear": 2021,
+            "title": "The Game",
+            "titleType": "tvSeries",
+            "year": 2021,
+            "principals": [
+                {
+                    "id": "/name/nm3884941/",
+                    "legacyNameText": "Velez, Analisa",
+                    "name": "Analisa Velez",
+                    "category": "actress",
+                    "characters": [
+                        "Raquel Navarro"
+                    ],
+                    "endYear": 2023,
+                    "episodeCount": 17,
+                    "roles": [
+                        {
+                            "character": "Raquel Navarro"
+                        }
+                    ],
+                    "startYear": 2021
+                },
+                {
+                    "id": "/name/nm0733185/",
+                    "legacyNameText": "Robinson, Wendy Raquel",
+                    "name": "Wendy Raquel Robinson",
+                    "category": "actress",
+                    "characters": [
+                        "Tasha Mack"
+                    ],
+                    "endYear": 2022,
+                    "episodeCount": 14,
+                    "roles": [
+                        {
+                            "character": "Tasha Mack"
+                        }
+                    ],
+                    "startYear": 2021
+                },
+                {
+                    "id": "/name/nm7026401/",
+                    "legacyNameText": "Rae, Adriyan",
+                    "name": "Adriyan Rae",
+                    "category": "actress",
+                    "characters": [
+                        "Brittany Pitts"
+                    ],
+                    "endYear": 2022,
+                    "episodeCount": 14,
+                    "roles": [
+                        {
+                            "character": "Brittany Pitts"
+                        }
+                    ],
+                    "startYear": 2021
+                }
+            ]
+        },
+        {
+            "akas": [
+                "Chuck Taylor aka The Game",
+                "The Game"
+            ],
+            "id": "/name/nm1667139/",
+            "image": {
+                "height": 400,
+                "id": "/name/nm1667139/images/rm641571328",
+                "url": "https://m.media-amazon.com/images/M/MV5BMTA0ODQyMjU4MjReQTJeQWpwZ15BbWU2MDM1NTE3Mw@@._V1_.jpg",
+                "width": 301
+            },
+            "legacyNameText": "Game",
+            "name": "Game",
+            "knownFor": [
+                {
+                    "cast": [
+                        {
+                            "as": "The Game",
+                            "billing": 14,
+                            "category": "actor",
+                            "characters": [
+                                "Grill"
+                            ],
+                            "roles": [
+                                {
+                                    "character": "Grill",
+                                    "characterId": "/character/ch0083434/"
+                                }
+                            ]
+                        }
+                    ],
+                    "summary": {
+                        "category": "actor",
+                        "characters": [
+                            "Grill"
+                        ],
+                        "displayYear": "2008"
+                    },
+                    "id": "/title/tt0421073/",
+                    "title": "Street Kings",
+                    "titleType": "movie",
+                    "year": 2008
+                },
+                {
+                    "summary": {
+                        "category": "soundtrack",
+                        "displayYear": "2010"
+                    },
+                    "id": "/title/tt0429493/",
+                    "title": "The A-Team",
+                    "titleType": "movie",
+                    "year": 2010
+                },
+                {
+                    "summary": {
+                        "category": "soundtrack",
+                        "displayYear": "2005"
+                    },
+                    "id": "/title/tt0393162/",
+                    "title": "Coach Carter",
+                    "titleType": "movie",
+                    "year": 2005
+                },
+                {
+                    "summary": {
+                        "category": "soundtrack",
+                        "displayYear": "2015"
+                    },
+                    "id": "/title/tt1398426/",
+                    "title": "Straight Outta Compton",
+                    "titleType": "movie",
+                    "year": 2015
+                }
+            ]
+        },
+        {
+            "id": "/title/tt2084970/",
+            "image": {
+                "height": 1969,
+                "id": "/title/tt2084970/images/rm1345992960",
+                "url": "https://m.media-amazon.com/images/M/MV5BOTgwMzFiMWYtZDhlNS00ODNkLWJiODAtZDVhNzgyNzJhYjQ4L2ltYWdlXkEyXkFqcGdeQXVyNzEzOTYxNTQ@._V1_.jpg",
+                "width": 1321
+            },
+            "runningTimeInMinutes": 114,
+            "title": "The Imitation Game",
+            "titleType": "movie",
+            "year": 2014,
+            "principals": [
+                {
+                    "id": "/name/nm1212722/",
+                    "legacyNameText": "Cumberbatch, Benedict",
+                    "name": "Benedict Cumberbatch",
+                    "billing": 1,
+                    "category": "actor",
+                    "characters": [
+                        "Alan Turing"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Alan Turing",
+                            "characterId": "/character/ch0387527/"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm0461136/",
+                    "legacyNameText": "Knightley, Keira",
+                    "name": "Keira Knightley",
+                    "billing": 2,
+                    "category": "actress",
+                    "characters": [
+                        "Joan Clarke"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Joan Clarke",
+                            "characterId": "/character/ch0387878/"
+                        }
+                    ]
+                },
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm0328828/",
+                    "legacyNameText": "Goode, Matthew (I)",
+                    "name": "Matthew Goode",
+                    "billing": 3,
+                    "category": "actor",
+                    "characters": [
+                        "Hugh Alexander"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Hugh Alexander",
+                            "characterId": "/character/ch0394817/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "/title/tt3748172/",
+            "image": {
+                "height": 1800,
+                "id": "/title/tt3748172/images/rm2797741568",
+                "url": "https://m.media-amazon.com/images/M/MV5BMzg0NGE0N2MtYTg1My00NTBkLWI5NjEtZTgyMDA0MTU4MmIyXkEyXkFqcGdeQXVyMTU2NTcyMg@@._V1_.jpg",
+                "width": 1215
+            },
+            "runningTimeInMinutes": 103,
+            "title": "Gerald's Game",
+            "titleType": "movie",
+            "year": 2017,
+            "principals": [
+                {
+                    "id": "/name/nm0001303/",
+                    "legacyNameText": "Gugino, Carla",
+                    "name": "Carla Gugino",
+                    "billing": 1,
+                    "category": "actress",
+                    "characters": [
+                        "Jessie"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Jessie"
+                        }
+                    ]
+                },
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm0339304/",
+                    "legacyNameText": "Greenwood, Bruce (I)",
+                    "name": "Bruce Greenwood",
+                    "billing": 2,
+                    "category": "actor",
+                    "characters": [
+                        "Gerald"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Gerald"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm5988570/",
+                    "legacyNameText": "Aurelia, Chiara",
+                    "name": "Chiara Aurelia",
+                    "billing": 3,
+                    "category": "actress",
+                    "characters": [
+                        "Young Jessie"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Young Jessie",
+                            "characterId": "/character/ch0597117/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "/title/tt4209788/",
+            "image": {
+                "height": 4096,
+                "id": "/title/tt4209788/images/rm261381376",
+                "url": "https://m.media-amazon.com/images/M/MV5BNTkzMzRlYjEtMTQ5Yi00OWY3LWI0NzYtNGQ4ZDkzZTU0M2IwXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+                "width": 2764
+            },
+            "runningTimeInMinutes": 140,
+            "title": "Molly's Game",
+            "titleType": "movie",
+            "year": 2017,
+            "principals": [
+                {
+                    "id": "/name/nm1567113/",
+                    "legacyNameText": "Chastain, Jessica",
+                    "name": "Jessica Chastain",
+                    "billing": 1,
+                    "category": "actress",
+                    "characters": [
+                        "Molly Bloom"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Molly Bloom",
+                            "characterId": "/character/ch0539187/"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm0252961/",
+                    "legacyNameText": "Elba, Idris",
+                    "name": "Idris Elba",
+                    "billing": 2,
+                    "category": "actor",
+                    "characters": [
+                        "Charlie Jaffey"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Charlie Jaffey"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm0000126/",
+                    "legacyNameText": "Costner, Kevin",
+                    "name": "Kevin Costner",
+                    "billing": 3,
+                    "category": "actor",
+                    "characters": [
+                        "Larry Bloom"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Larry Bloom",
+                            "characterId": "/character/ch0591437/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "/title/tt8718158/",
+            "image": {
+                "height": 4096,
+                "id": "/title/tt8718158/images/rm2731337985",
+                "url": "https://m.media-amazon.com/images/M/MV5BNDI2MDQzZDAtZmVlZS00MWU1LThkNzUtNjZmZmY3ZDljYjk2XkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_.jpg",
+                "width": 2764
+            },
+            "runningTimeInMinutes": 102,
+            "title": "The Hating Game",
+            "titleType": "movie",
+            "year": 2021,
+            "principals": [
+                {
+                    "disambiguation": "II",
+                    "id": "/name/nm1423955/",
+                    "legacyNameText": "Hale, Lucy (II)",
+                    "name": "Lucy Hale",
+                    "billing": 1,
+                    "category": "actress",
+                    "characters": [
+                        "Lucy Hutton"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Lucy Hutton"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm3271473/",
+                    "legacyNameText": "Stowell, Austin",
+                    "name": "Austin Stowell",
+                    "billing": 2,
+                    "category": "actor",
+                    "characters": [
+                        "Joshua Templeman"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Joshua Templeman"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm3093026/",
+                    "legacyNameText": "Daunno, Damon",
+                    "name": "Damon Daunno",
+                    "billing": 3,
+                    "category": "actor",
+                    "characters": [
+                        "Danny"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Danny"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "/title/tt0096741/",
+            "image": {
+                "height": 809,
+                "id": "/title/tt0096741/images/rm2522945792",
+                "url": "https://m.media-amazon.com/images/M/MV5BZWEyOGE1ZGMtNjk1MS00MTQ4LTkxNTgtYWZhNjNlZDA4OGM2XkEyXkFqcGdeQXVyMjYwNzUxNjI@._V1_.jpg",
+                "width": 550
+            },
+            "runningTimeInMinutes": 92,
+            "title": "Deadly Games",
+            "titleType": "movie",
+            "year": 1989,
+            "principals": [
+                {
+                    "id": "/name/nm0287637/",
+                    "legacyNameText": "Fossey, Brigitte",
+                    "name": "Brigitte Fossey",
+                    "billing": 1,
+                    "category": "actress",
+                    "characters": [
+                        "Julie"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Julie"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm0239985/",
+                    "legacyNameText": "Ducreux, Louis",
+                    "name": "Louis Ducreux",
+                    "billing": 2,
+                    "category": "actor",
+                    "characters": [
+                        "Papy"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Papy"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm0282505/",
+                    "legacyNameText": "Floersheim, Patrick",
+                    "name": "Patrick Floersheim",
+                    "billing": 3,
+                    "category": "actor",
+                    "characters": [
+                        "Le Père Noël",
+                        "Santa Claus"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Le Père Noël",
+                            "characterId": "/character/ch0004985/"
+                        },
+                        {
+                            "character": "Santa Claus",
+                            "characterId": "/character/ch0004985/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "/title/tt1731141/",
+            "image": {
+                "height": 2048,
+                "id": "/title/tt1731141/images/rm2563168256",
+                "url": "https://m.media-amazon.com/images/M/MV5BMjAzMzI5OTgzMl5BMl5BanBnXkFtZTgwMTU5MTAwMDE@._V1_.jpg",
+                "width": 1382
+            },
+            "runningTimeInMinutes": 114,
+            "title": "Ender's Game",
+            "titleType": "movie",
+            "year": 2013,
+            "principals": [
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm0000148/",
+                    "legacyNameText": "Ford, Harrison (I)",
+                    "name": "Harrison Ford",
+                    "billing": 2,
+                    "category": "actor",
+                    "characters": [
+                        "Colonel Graff"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Colonel Graff",
+                            "characterId": "/character/ch0321447/"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm2633535/",
+                    "legacyNameText": "Butterfield, Asa",
+                    "name": "Asa Butterfield",
+                    "billing": 1,
+                    "category": "actor",
+                    "characters": [
+                        "Ender Wiggin"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Ender Wiggin",
+                            "characterId": "/character/ch0279108/"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm2794962/",
+                    "legacyNameText": "Steinfeld, Hailee",
+                    "name": "Hailee Steinfeld",
+                    "billing": 3,
+                    "category": "actress",
+                    "characters": [
+                        "Petra Arkanian"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Petra Arkanian",
+                            "characterId": "/character/ch0279109/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "/title/tt15397918/",
+            "image": {
+                "height": 1500,
+                "id": "/title/tt15397918/images/rm2975924481",
+                "url": "https://m.media-amazon.com/images/M/MV5BODkwZjc2NTgtNzljZC00NzRkLTgxNjctMDUxODU3NGM2ZDkyXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg",
+                "width": 1000
+            },
+            "runningTimeInMinutes": 91,
+            "title": "Game of Love",
+            "titleType": "movie",
+            "year": 2022,
+            "principals": [
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm2254074/",
+                    "legacyNameText": "Thorne, Bella (I)",
+                    "name": "Bella Thorne",
+                    "category": "actress",
+                    "characters": [
+                        "Vivien"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Vivien"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm10787776/",
+                    "legacyNameText": "Mascolo, Benjamin",
+                    "name": "Benjamin Mascolo",
+                    "category": "actor",
+                    "characters": [
+                        "Roy"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Roy"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm0734751/",
+                    "legacyNameText": "Rodgers, Michael E.",
+                    "name": "Michael E. Rodgers",
+                    "category": "actor",
+                    "characters": [
+                        "Thomas"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Thomas"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "/title/tt0772137/",
+            "image": {
+                "height": 450,
+                "id": "/title/tt0772137/images/rm2695583488",
+                "url": "https://m.media-amazon.com/images/M/MV5BNmQ3ZDBlMWItZDFkNS00Y2NjLWFmMDYtYTBmMTJjYWVjNzVhXkEyXkFqcGdeQXVyODQ1NTk5OQ@@._V1_.jpg",
+                "width": 300
+            },
+            "runningTimeInMinutes": 21,
+            "nextEpisode": "/title/tt0871629/",
+            "numberOfEpisodes": 148,
+            "seriesEndYear": 2015,
+            "seriesStartYear": 2006,
+            "title": "The Game",
+            "titleType": "tvSeries",
+            "year": 2006,
+            "principals": [
+                {
+                    "id": "/name/nm1914898/",
+                    "legacyNameText": "Chanchez, Hosea",
+                    "name": "Hosea Chanchez",
+                    "category": "actor",
+                    "characters": [
+                        "Malik Wright"
+                    ],
+                    "endYear": 2015,
+                    "episodeCount": 147,
+                    "roles": [
+                        {
+                            "character": "Malik Wright",
+                            "characterId": "/character/ch0033811/"
+                        }
+                    ],
+                    "startYear": 2006
+                },
+                {
+                    "id": "/name/nm0733185/",
+                    "legacyNameText": "Robinson, Wendy Raquel",
+                    "name": "Wendy Raquel Robinson",
+                    "category": "actress",
+                    "characters": [
+                        "Tasha Mack"
+                    ],
+                    "endYear": 2015,
+                    "episodeCount": 147,
+                    "roles": [
+                        {
+                            "character": "Tasha Mack",
+                            "characterId": "/character/ch0033818/"
+                        }
+                    ],
+                    "startYear": 2006
+                },
+                {
+                    "id": "/name/nm0068117/",
+                    "legacyNameText": "Bell, Coby",
+                    "name": "Coby Bell",
+                    "category": "actor",
+                    "characters": [
+                        "Jason Pitts"
+                    ],
+                    "endYear": 2015,
+                    "episodeCount": 147,
+                    "roles": [
+                        {
+                            "character": "Jason Pitts",
+                            "characterId": "/character/ch0033814/"
+                        }
+                    ],
+                    "startYear": 2006
+                }
+            ]
+        },
+        {
+            "akas": [
+                "Geoffrey A. Thorne"
+            ],
+            "id": "/name/nm0861382/",
+            "image": {
+                "height": 676,
+                "id": "/name/nm0861382/images/rm4193543168",
+                "url": "https://m.media-amazon.com/images/M/MV5BMmE3YjQ3YjgtNzhmOC00NmU5LWFiYmQtNTg5MDc4MGZjMGViXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg",
+                "width": 708
+            },
+            "legacyNameText": "Thorne, Geoffrey",
+            "name": "Geoffrey Thorne",
+            "knownFor": [
+                {
+                    "crew": [
+                        {
+                            "category": "writer",
+                            "endYear": 2021,
+                            "episodeCount": 1,
+                            "job": "written by",
+                            "startYear": 2021
+                        },
+                        {
+                            "category": "producer",
+                            "endYear": 2021,
+                            "episodeCount": 16,
+                            "job": "co-executive producer",
+                            "startYear": 2020
+                        }
+                    ],
+                    "summary": {
+                        "category": "producer",
+                        "displayYear": "2020-2021"
+                    },
+                    "id": "/title/tt7942796/",
+                    "title": "Magnum P.I.",
+                    "titleType": "tvSeries",
+                    "year": 2018
+                },
+                {
+                    "crew": [
+                        {
+                            "category": "writer",
+                            "endYear": 2020,
+                            "episodeCount": 1,
+                            "job": "written by",
+                            "startYear": 2020
+                        },
+                        {
+                            "category": "producer",
+                            "endYear": 2021,
+                            "episodeCount": 10,
+                            "job": "co-executive producer",
+                            "startYear": 2020
+                        }
+                    ],
+                    "summary": {
+                        "category": "producer",
+                        "displayYear": "2020-2021"
+                    },
+                    "id": "/title/tt10732104/",
+                    "title": "Power Book II: Ghost",
+                    "titleType": "tvSeries",
+                    "year": 2020
+                },
+                {
+                    "crew": [
+                        {
+                            "category": "writer",
+                            "endYear": 2010,
+                            "episodeCount": 1,
+                            "job": "written by",
+                            "startYear": 2010
+                        }
+                    ],
+                    "summary": {
+                        "category": "writer",
+                        "displayYear": "2010"
+                    },
+                    "id": "/title/tt0275140/",
+                    "title": "Law & Order: Criminal Intent",
+                    "titleType": "tvSeries",
+                    "year": 2001
+                },
+                {
+                    "crew": [
+                        {
+                            "category": "writer",
+                            "endYear": 2012,
+                            "episodeCount": 5,
+                            "job": "written by",
+                            "startYear": 2010
+                        },
+                        {
+                            "category": "producer",
+                            "endYear": 2012,
+                            "episodeCount": 15,
+                            "job": "co-producer",
+                            "startYear": 2012
+                        },
+                        {
+                            "category": "miscellaneous",
+                            "endYear": 2012,
+                            "episodeCount": 18,
+                            "job": "story editor",
+                            "startYear": 2011
+                        }
+                    ],
+                    "summary": {
+                        "category": "producer",
+                        "displayYear": "2010-2012"
+                    },
+                    "id": "/title/tt1103987/",
+                    "title": "Leverage",
+                    "titleType": "tvSeries",
+                    "year": 2008
+                }
+            ]
+        },
+        {
+            "id": "/title/tt0281491/",
+            "image": {
+                "height": 500,
+                "id": "/title/tt0281491/images/rm1344904448",
+                "url": "https://m.media-amazon.com/images/M/MV5BMTIwNTQwMDIwNV5BMl5BanBnXkFtZTcwMzExMzAzMQ@@._V1_.jpg",
+                "width": 347
+            },
+            "runningTimeInMinutes": 30,
+            "nextEpisode": "/title/tt0710326/",
+            "numberOfEpisodes": 63,
+            "seriesEndYear": 2019,
+            "seriesStartYear": 2002,
+            "title": "Still Game",
+            "titleType": "tvSeries",
+            "year": 2002,
+            "principals": [
+                {
+                    "id": "/name/nm0452576/",
+                    "legacyNameText": "Kiernan, Ford",
+                    "name": "Ford Kiernan",
+                    "category": "actor",
+                    "characters": [
+                        "Jack Jarvis",
+                        "Racing Commentator (voice)"
+                    ],
+                    "endYear": 2019,
+                    "episodeCount": 62,
+                    "roles": [
+                        {
+                            "character": "Jack Jarvis",
+                            "characterId": "/character/ch0063496/"
+                        },
+                        {
+                            "character": "Racing Commentator (voice)"
+                        }
+                    ],
+                    "startYear": 2002
+                },
+                {
+                    "id": "/name/nm0376157/",
+                    "legacyNameText": "Hemphill, Greg",
+                    "name": "Greg Hemphill",
+                    "category": "actor",
+                    "characters": [
+                        "Victor McDade"
+                    ],
+                    "endYear": 2019,
+                    "episodeCount": 62,
+                    "roles": [
+                        {
+                            "character": "Victor McDade",
+                            "characterId": "/character/ch0063497/"
+                        }
+                    ],
+                    "startYear": 2002
+                },
+                {
+                    "disambiguation": "V",
+                    "id": "/name/nm0727145/",
+                    "legacyNameText": "Riley, Paul (V)",
+                    "name": "Paul Riley",
+                    "category": "actor",
+                    "characters": [
+                        "Winston Ingram"
+                    ],
+                    "endYear": 2019,
+                    "episodeCount": 62,
+                    "roles": [
+                        {
+                            "character": "Winston Ingram",
+                            "characterId": "/character/ch0083120/"
+                        }
+                    ],
+                    "startYear": 2002
+                }
+            ]
+        },
+        {
+            "id": "/title/tt10580064/",
+            "image": {
+                "height": 1500,
+                "id": "/title/tt10580064/images/rm2243673345",
+                "url": "https://m.media-amazon.com/images/M/MV5BOWYyNjA5MmQtNjRiOC00OTgzLTk1ZjEtZDE0N2YyYjI5YTUxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+                "width": 1013
+            },
+            "runningTimeInMinutes": 7,
+            "nextEpisode": "/title/tt11306944/",
+            "numberOfEpisodes": 24,
+            "seriesEndYear": 2020,
+            "seriesStartYear": 2020,
+            "title": "Most Dangerous Game",
+            "titleType": "tvSeries",
+            "year": 2020,
+            "principals": [
+                {
+                    "id": "/name/nm2955013/",
+                    "legacyNameText": "Hemsworth, Liam",
+                    "name": "Liam Hemsworth",
+                    "category": "actor",
+                    "characters": [
+                        "Dodge Tynes"
+                    ],
+                    "endYear": 2020,
+                    "episodeCount": 15,
+                    "roles": [
+                        {
+                            "character": "Dodge Tynes"
+                        }
+                    ],
+                    "startYear": 2020
+                },
+                {
+                    "id": "/name/nm0300589/",
+                    "legacyNameText": "Gadon, Sarah",
+                    "name": "Sarah Gadon",
+                    "category": "actress",
+                    "characters": [
+                        "Val"
+                    ],
+                    "endYear": 2020,
+                    "episodeCount": 15,
+                    "roles": [
+                        {
+                            "character": "Val"
+                        }
+                    ],
+                    "startYear": 2020
+                },
+                {
+                    "id": "/name/nm0910607/",
+                    "legacyNameText": "Waltz, Christoph",
+                    "name": "Christoph Waltz",
+                    "category": "actor",
+                    "characters": [
+                        "Miles Sellars"
+                    ],
+                    "endYear": 2020,
+                    "episodeCount": 15,
+                    "roles": [
+                        {
+                            "character": "Miles Sellars"
+                        }
+                    ],
+                    "startYear": 2020
+                }
+            ]
+        },
+        {
+            "id": "/title/tt0104036/",
+            "image": {
+                "height": 1500,
+                "id": "/title/tt0104036/images/rm2626552320",
+                "url": "https://m.media-amazon.com/images/M/MV5BYWU4MjQ3YzUtNTA3YS00YmRmLTk1YjktODM1NGU0MjFiOTUzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+                "width": 959
+            },
+            "runningTimeInMinutes": 112,
+            "title": "The Crying Game",
+            "titleType": "movie",
+            "year": 1992,
+            "principals": [
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm0001653/",
+                    "legacyNameText": "Rea, Stephen (I)",
+                    "name": "Stephen Rea",
+                    "billing": 3,
+                    "category": "actor",
+                    "characters": [
+                        "Fergus"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Fergus",
+                            "characterId": "/character/ch0038193/"
+                        }
+                    ]
+                },
+                {
+                    "disambiguation": "I",
+                    "id": "/name/nm0001109/",
+                    "legacyNameText": "Davidson, Jaye (I)",
+                    "name": "Jaye Davidson",
+                    "billing": 8,
+                    "category": "actor",
+                    "characters": [
+                        "Dil"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Dil",
+                            "characterId": "/character/ch0013750/"
+                        }
+                    ]
+                },
+                {
+                    "id": "/name/nm0001845/",
+                    "legacyNameText": "Whitaker, Forest",
+                    "name": "Forest Whitaker",
+                    "billing": 1,
+                    "category": "actor",
+                    "characters": [
+                        "Jody"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Jody",
+                            "characterId": "/character/ch0013749/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "/title/tt3317234/",
+            "image": {
+                "height": 2048,
+                "id": "/title/tt3317234/images/rm526471680",
+                "url": "https://m.media-amazon.com/images/M/MV5BMTUxNjI4MDU2OF5BMl5BanBnXkFtZTgwMDAzMzA1NDM@._V1_.jpg",
+                "width": 1382
+            },
+            "runningTimeInMinutes": 101,
+            "title": "Game Over, Man!",
+            "titleType": "movie",
+            "year": 2018,
+            "principals": [
+                {
+                    "disambiguation": "III",
+                    "id": "/name/nm2796745/",
+                    "legacyNameText": "Devine, Adam (III)",
+                    "name": "Adam Devine",
+                    "billing": 1,
+                    "category": "actor",
+                    "characters": [
+                        "Alexxx"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Alexxx"
+                        }
+                    ]
+                },
+                {
+                    "disambiguation": "IV",
+                    "id": "/name/nm2981082/",
+                    "legacyNameText": "Holm, Anders (IV)",
+                    "name": "Anders Holm",
+                    "billing": 2,
+                    "category": "actor",
+                    "characters": [
+                        "Darren"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Darren"
+                        }
+                    ]
+                },
+                {
+                    "disambiguation": "VI",
+                    "id": "/name/nm2981935/",
+                    "legacyNameText": "Anderson, Blake (VI)",
+                    "name": "Blake Anderson",
+                    "billing": 3,
+                    "category": "actor",
+                    "characters": [
+                        "Joel"
+                    ],
+                    "roles": [
+                        {
+                            "character": "Joel"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "/title/tt4711184/",
+            "image": {
+                "height": 1920,
+                "id": "/title/tt4711184/images/rm2832177921",
+                "url": "https://m.media-amazon.com/images/M/MV5BMzY0Nzg5ODAtMDliNC00OTlhLWFlNDItODAxMmFkY2FiZmVhXkEyXkFqcGdeQXVyODk4Nzg5NjE@._V1_.jpg",
+                "width": 1280
+            },
+            "runningTimeInMinutes": 30,
+            "nextEpisode": "/title/tt4851662/",
+            "numberOfEpisodes": 61,
+            "seriesEndYear": 2019,
+            "seriesStartYear": 2015,
+            "title": "Game Shakers",
+            "titleType": "tvSeries",
+            "year": 2015,
+            "principals": [
+                {
+                    "id": "/name/nm7446985/",
+                    "legacyNameText": "Cree",
+                    "name": "Cree",
+                    "category": "actress",
+                    "characters": [
+                        "Babe Carano"
+                    ],
+                    "endYear": 2019,
+                    "episodeCount": 61,
+                    "roles": [
+                        {
+                            "character": "Babe Carano",
+                            "characterId": "/character/ch0585709/"
+                        }
+                    ],
+                    "startYear": 2015
+                },
+                {
+                    "id": "/name/nm4362215/",
+                    "legacyNameText": "Shipman, Madisyn",
+                    "name": "Madisyn Shipman",
+                    "category": "actress",
+                    "characters": [
+                        "Kenzie Bell"
+                    ],
+                    "endYear": 2019,
+                    "episodeCount": 61,
+                    "roles": [
+                        {
+                            "character": "Kenzie Bell",
+                            "characterId": "/character/ch0585710/"
+                        }
+                    ],
+                    "startYear": 2015
+                },
+                {
+                    "id": "/name/nm4652001/",
+                    "legacyNameText": "Flores Jr., Benjamin",
+                    "name": "Benjamin Flores Jr.",
+                    "category": "actor",
+                    "characters": [
+                        "Triple G"
+                    ],
+                    "endYear": 2019,
+                    "episodeCount": 61,
+                    "roles": [
+                        {
+                            "character": "Triple G",
+                            "characterId": "/character/ch0549983/"
+                        }
+                    ],
+                    "startYear": 2015
+                }
+            ]
+        }
+    ],
+    "types": [
+        "title",
+        "name"
+    ]
+}
