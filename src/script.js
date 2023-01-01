@@ -63,7 +63,7 @@ function show(data) {
 
 						<div id="id">id: ${title_id}</div>
 					</div>
-				</div>`
+				</div>`;
 
 			document.getElementById('result').innerHTML += tab;
 			document.getElementById(`image${i}`).src = data.results[i].image.url;
@@ -88,7 +88,7 @@ window.onload = function(){
 	*/
 	//codeblock di atas fix
 
-	reset()
-	get_data()
+	reset();
+	get_data();
 	//codeblock di atas percobaan
 }
