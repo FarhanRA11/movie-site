@@ -1,5 +1,5 @@
 function reset(){
-	document.getElementById('result').innerHTML = '';
+	document.getElementById('result').innerHTML = '\n';
 }
 
 async function get_data(){
@@ -22,7 +22,7 @@ const options = {
 /*
 async function get_data(q){
 	let q_fix = String(q).replace(/\s/g, '%20');
-	var url = `https://imdb8.p.rapidapi.com/title/find?q=${q_fix}`;
+	let url = `https://imdb8.p.rapidapi.com/title/find?q=${q_fix}`;
 
 	const response = await fetch(url, options);
 	var data = await response.json();
@@ -34,14 +34,14 @@ async function get_data(q){
 //fungsi di atas fix
 
 function show(data) {
-	for(let i=0; i<=20; i++){
-		if(String(data.results[i].id).includes('title') && 
-			'image' in data.results[i]
+	for(let i=0; i>=0; i++){
+		if(String(data.results[i].id).includes('title') 
+			&& 'image' in data.results[i]
 		){
-			var title = data.results[i].title;
-			var type = `${data.results[i].year} ${data.results[i].titleType}`;
+			let title = data.results[i].title;
+			let type = `${data.results[i].year} ${data.results[i].titleType}`;
 			let title_id = String(data.results[i].id).slice(7,-1);
-			
+
 			let tab = 
 
 				`<div id="tab">
@@ -53,12 +53,10 @@ function show(data) {
 						<div id="title">${title}</div>
 						<div id="type">${type}</div>
 						
-						<button onclick="myfunc(
-							'${title}',
-							'${type}',
-							'${title_id}')
+						<button onclick="
+							localStorage.setItem('syn_code', '${title}|${type}|${title_id}');
 						">
-								<a href="./syn.html">
+								<a href="./syn.html" target="_blank">
 									synopsis
 								</a>
 						</button>
@@ -72,15 +70,6 @@ function show(data) {
 		}
 	}
 }
-
-var syn_data;
-function myfunc(tt, ty, id){
-	let syn_title = tt;
-	let syn_type = ty;
-	let syn_id = id;
-	syn_data = [syn_title, syn_type, syn_id];
-}
-export default syn_data;
 
 window.onload = function(){
 	/*

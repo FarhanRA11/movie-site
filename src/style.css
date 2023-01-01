@@ -36,7 +36,7 @@ header{
     border-radius: 25px;
     padding: 0px 10px 0px 10px;
     width: 850px;
-    max-width: calc(100vw - 550px);
+    max-width: calc(100vw - 500px);
     min-width: 50px;
     height: 40px;
 }
@@ -153,6 +153,10 @@ button:hover{
         margin: 10px 60px 10px 60px;
     }
 
+    #logo{
+        max-width: 200px;
+    }
+
     #input_query{
         width: 1000px;
     }
@@ -170,8 +174,12 @@ button:hover{
     #input_query{
         max-width: 500px;
         width: 850px;
-        max-width: calc(100vw - 250px);
+        max-width: calc(100vw - 180px);
         min-width: 50px;
+    }
+
+    #result{
+        margin: 20px;
     }
 
     #tab{
