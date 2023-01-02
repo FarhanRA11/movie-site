@@ -56,7 +56,7 @@ function show(data) {
 						<button onclick="
 							localStorage.setItem('syn_code', '${title}|${type}|${title_id}');
 						">
-								<a href="./syn.html" target="_blank">
+								<a href="./syn.html">
 									synopsis
 								</a>
 						</button>

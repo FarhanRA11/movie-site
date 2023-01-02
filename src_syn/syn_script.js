@@ -33,9 +33,6 @@ async function get_data(){
 
 function show(data) {
 	for(let i=0; i>=0; i++){
-        let title = lst[0];
-        let type = lst[1];
-        let id = lst[2];
         let language = data[i].language;
         var profanity = '';
         let synopsis = data[i].text;
@@ -44,30 +41,25 @@ function show(data) {
             profanity = 'profanity warning!';
         }
         
-        let header_tab = 
-            `<div id="header_tab">
-                <div id="title">${title}</div>
-                <div id="type">${type}</div>
-                <div id="id">id: ${id}</div>
-            </div>`;
-
-        let body_tab = 
+        let tab = 
             `<div id="body_tab">
                 <div id="info">
                     <div>language: ${language}</div>
                     <div id="warning"><b>${profanity}</b></div>
                 </div>
-                <div id="syn_text">&emsp;&emsp;${synopsis}</div>
+                <p id="syn_text">&emsp;&emsp;${synopsis}</p>
             </div>`;
 
-        document.getElementById('syn_desc').innerHTML += header_tab;
-        document.getElementById('syn_result').innerHTML += body_tab;
+        document.getElementById('syn_result').innerHTML += tab;
 	}
 }
 
 
 window.onload = function(){
 	document.title = 'Synopsis: ' + lst[0];
+    document.getElementById('title').innerHTML = lst[0];
+    document.getElementById('type').innerHTML = lst[1];
+    document.getElementById('id').innerHTML = lst[2];
 
     console.log(lst);
     get_data();

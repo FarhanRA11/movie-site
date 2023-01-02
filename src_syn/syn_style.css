@@ -25,8 +25,9 @@ img{
 
 #syn_desc{
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin-left: 50px;
+    flex-direction: column;
 }
 
 #syn_result{
@@ -45,6 +46,7 @@ img{
 #title{
     font-size: 45px;
     line-height: 50px;
+    font-style: oblique;
 }
 
 #type{
@@ -93,14 +95,16 @@ a{
         display: flex;
         justify-content: center;
         text-align: center;
+        align-items: center;
     }
 
     #info{
-        margin: 10px;
+        margin: 20px;
     }
 
+
     #syn_text{
-        margin: 20px 10px 20px 10px;
+        margin: 10px;
     }
 }
 
