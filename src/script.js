@@ -1,10 +1,13 @@
+let urlSegment = window.location.search
+var segmentQuery = decodeURIComponent(urlSegment.substring(urlSegment.indexOf('?')+1));
+
 function reset(){
-	document.getElementById('result').innerHTML = '\n';
+	document.getElementById('result').textContent = ' ';
 }
 
-async function get_data(){
+async function get_data(q){
 	const response = await fetch('./src/src_data.json').catch(err => console.error(err));
-	var data = await response.json();
+	let data = await response.json();
 	console.log(data);
 
 	show(data);
@@ -21,11 +24,10 @@ const options = {
 
 /*
 async function get_data(q){
-	let q_fix = String(q).replace(/\s/g, '%20');
-	let url = `https://imdb8.p.rapidapi.com/title/find?q=${q_fix}`;
+	let url = `https://imdb8.p.rapidapi.com/title/find?q=${String(q)}`;
 
 	const response = await fetch(url, options);
-	var data = await response.json();
+	let data = await response.json();
 	console.log(data);
 
 	show(data);
@@ -35,28 +37,23 @@ async function get_data(q){
 
 function show(data) {
 	for(let i=0; i>=0; i++){
-		if(String(data.results[i].id).includes('title') 
-			&& 'image' in data.results[i]
-		){
-			let title = data.results[i].title;
+		if(String(data.results[i].id).includes('title')){
+			let title = String(data.results[i].title);
 			let type = `${data.results[i].year} ${data.results[i].titleType}`;
 			let title_id = String(data.results[i].id).slice(7,-1);
 
-			let tab = 
-
+			document.getElementById('result').innerHTML += 
 				`<div id="tab">
-                    <div id="container">
-                        <img src="" alt="image" id="image${i}">
-                    </div>
+					<div class="container" id="container${i}">
+						<img src="" alt="image" id="image${i}">
+					</div>
 					
 					<div id="desc">
 						<div id="title">${title}</div>
 						<div id="type">${type}</div>
 						
-						<button onclick="
-							localStorage.setItem('syn_code', '${title}|${type}|${title_id}');
-						">
-								<a href="./syn.html">
+						<button>
+								<a href="./syn.html?title=${title}&type=${type}&id=${title_id}" target="_blank">
 									synopsis
 								</a>
 						</button>
@@ -65,8 +62,12 @@ function show(data) {
 					</div>
 				</div>`;
 
-			document.getElementById('result').innerHTML += tab;
-			document.getElementById(`image${i}`).src = data.results[i].image.url;
+			if('image' in data.results[i]){
+				document.getElementById(`image${i}`).src = data.results[i].image.url;
+			}else{
+				document.getElementById(`container${i}`).innerHTML = 'image is not currently available';
+				document.getElementById(`container${i}`).style.minWidth = '180px';
+			}
 		}
 	}
 }
@@ -87,8 +88,16 @@ window.onload = function(){
 	}
 	*/
 	//codeblock di atas fix
+	document.getElementById('result').textContent = ' ';
 
-	reset();
-	get_data();
-	//codeblock di atas percobaan
+	document.getElementById('input_query').value = segmentQuery;
+	document.getElementById('submit_query').onclick = function(){
+		let query = String(document.getElementById('input_query').value);
+		window.location = `index.html?${query}`;
+		if(query.length){
+			alert(`search ${query}`)
+		}
+	}
+	get_data(query);
+	//codeblock di atas fix*
 }

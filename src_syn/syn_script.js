@@ -1,9 +1,12 @@
-var code = localStorage.getItem('syn_code');
-var lst = code.split('|');
+let urlSegment = window.location.search
+let lst = urlSegment.substring(urlSegment.indexOf('?')+1).split('&');
+var title = decodeURIComponent(lst[0].substring(lst[0].indexOf('=')+1));
+var type = decodeURIComponent(lst[1].substring(lst[1].indexOf('=')+1));
+var id = lst[2].substring(lst[2].indexOf('=')+1);
 
 async function get_data(){
     const response = await fetch('./src_syn/src_data_syn.json').catch(err => console.error(err));
-	var data = await response.json();
+	let data = await response.json();
 	console.log(data);
 
 	show(data);
@@ -20,10 +23,10 @@ const options = {
 
 /*
 async function get_data(){
-	let url = `https://imdb8.p.rapidapi.com/title/get-synopses?tconst=${lst[2]}`;
+	let url = `https://imdb8.p.rapidapi.com/title/get-synopses?tconst=${id}`;
 
 	const response = await fetch(url, options).catch(err => console.error(err));
-	var data = await response.json();
+	let data = await response.json();
 	console.log(data);
 
 	show(data);
@@ -32,35 +35,37 @@ async function get_data(){
 //fungsi di atas fix
 
 function show(data) {
-	for(let i=0; i>=0; i++){
-        let language = data[i].language;
-        var profanity = '';
-        let synopsis = data[i].text;
+    if(data.length){
+        for(let i=0; i>=0; i++){
+            let language = data[i].language;
+            let profanity = '';
+            let synopsis = data[i].text;
 
-        if(data[i].hasProfanity){
-            profanity = 'profanity warning!';
+            if(data[i].hasProfanity){
+                profanity = 'profanity warning!';
+            }
+            
+            document.getElementById('syn_result').innerHTML += 
+                `<div id="body_tab">
+                    <div id="info">
+                        <div>language: ${language}</div>
+                        <div id="warning"><b>${profanity}</b></div>
+                    </div>
+                    <p id="syn_text">&emsp;&emsp;${synopsis}</p>
+                </div>`;
         }
-        
-        let tab = 
-            `<div id="body_tab">
-                <div id="info">
-                    <div>language: ${language}</div>
-                    <div id="warning"><b>${profanity}</b></div>
-                </div>
-                <p id="syn_text">&emsp;&emsp;${synopsis}</p>
-            </div>`;
-
-        document.getElementById('syn_result').innerHTML += tab;
-	}
+    }else{
+        document.getElementById('syn_result').textContent = `synopsis for ${title} is not currently available`;
+        document.getElementById('syn_result').style.textAlign = 'center';
+        document.getElementById('syn_result').style.marginTop = '100px';
+    }
 }
 
-
 window.onload = function(){
-	document.title = 'Synopsis: ' + lst[0];
-    document.getElementById('title').innerHTML = lst[0];
-    document.getElementById('type').innerHTML = lst[1];
-    document.getElementById('id').innerHTML = lst[2];
+	document.title = 'Synopsis: ' + title;
+    document.getElementById('title').textContent = title;
+    document.getElementById('type').textContent = type;
+    document.getElementById('id').textContent = id;
 
-    console.log(lst);
     get_data();
 }
