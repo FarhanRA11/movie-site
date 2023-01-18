@@ -1,16 +1,23 @@
 let urlSegment = window.location.search
 var segmentQuery = decodeURIComponent(urlSegment.substring(urlSegment.indexOf('?')+1));
 
-function reset(){
-	document.getElementById('result').textContent = ' ';
+function clearing(){
+	document.getElementById('result').innerHTML = '';
 }
 
-async function get_data(q){
-	const response = await fetch('./src/src_data.json').catch(err => console.error(err));
-	let data = await response.json();
-	console.log(data);
+async function get_data(){
+	if(segmentQuery.length){
+		document.getElementById('input_query').value = segmentQuery;
+		const response = await fetch('./src/src_data.json').catch(err => console.error(err));
+		let data = await response.json();
 
-	show(data);
+		console.log(segmentQuery);
+		console.log(data);
+
+		show(data);
+	}else{
+		clearing();
+	}
 }
 //fungsi di atas percobaan
 
@@ -23,14 +30,21 @@ const options = {
 };
 
 /*
-async function get_data(q){
-	let url = `https://imdb8.p.rapidapi.com/title/find?q=${String(q)}`;
+async function get_data(){
+	if(segmentQuery.length){
+		document.getElementById('input_query').value = segmentQuery;
 
-	const response = await fetch(url, options);
-	let data = await response.json();
-	console.log(data);
+		let url = `https://imdb8.p.rapidapi.com/title/find?q=${segmentQuery}`;
+		const response = await fetch(url, options).catch(err => console.error(err));
+		let data = await response.json();
 
-	show(data);
+		console.log(segmentQuery);
+		console.log(data);
+
+		show(data);
+	}else{
+		reset()
+	}
 }
 */
 //fungsi di atas fix
@@ -88,16 +102,19 @@ window.onload = function(){
 	}
 	*/
 	//codeblock di atas fix
-	document.getElementById('result').textContent = ' ';
+	
+	var query = String(document.getElementById('input_query').value);
+	clearing()
+	get_data(query);
 
-	document.getElementById('input_query').value = segmentQuery;
+	document.getElementById('result').textContent = ' ';
 	document.getElementById('submit_query').onclick = function(){
-		let query = String(document.getElementById('input_query').value);
-		window.location = `index.html?${query}`;
-		if(query.length){
-			alert(`search ${query}`)
+		query = String(document.getElementById('input_query').value);
+		
+		if(query.replaceAll(' ', '').length){
+			alert(`search "${query}" success`)
+			window.location = `index.html?${query}`;
 		}
 	}
-	get_data(query);
 	//codeblock di atas fix*
 }
