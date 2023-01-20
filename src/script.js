@@ -5,22 +5,6 @@ function empty(){
 	document.getElementById('result').innerHTML = '';
 }
 
-async function get_data(){
-	if(segmentQuery.length){
-		document.getElementById('input_query').value = segmentQuery;
-		const response = await fetch('./src/src_data.json').catch(err => console.error(err));
-		const data = await response.json();
-
-		console.log(segmentQuery); //data test
-		console.log(data); //data test
-
-		show(data.results);
-	}else{
-		empty();
-	}
-}
-//fungsi di atas percobaan
-
 const options = {
 	method: 'GET',
 	headers: {
@@ -29,7 +13,6 @@ const options = {
 	}
 };
 
-/*
 async function get_data(){
 	if(segmentQuery.length){
 		document.getElementById('input_query').value = segmentQuery;
@@ -46,8 +29,6 @@ async function get_data(){
 		empty();
 	}
 }
-*/
-//fungsi di atas fix
 
 function show(data) {
 	if(data.length){
@@ -90,22 +71,6 @@ function show(data) {
 }
 
 window.onload = function(){
-	/*
-	let query = String(document.getElementById('input_query').value);
-	get_data(query);
-
-	let submit_button = document.getElementById('submit_query');
-	submit_button.onclick = function(){
-		let query = String(document.getElementById('input_query').value);
-		reset();
-		if(query.length){
-			alert(`search ${query}`);
-			get_data(query);
-		}
-	}
-	*/
-	//codeblock di atas fix
-	
 	var query = String(document.getElementById('input_query').value);
 	empty();
 	get_data(query);
@@ -117,5 +82,4 @@ window.onload = function(){
 			document.getElementById('submit_query').click();
 		}
 	});
-	//codeblock di atas fix+
 }

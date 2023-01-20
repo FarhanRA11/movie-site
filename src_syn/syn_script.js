@@ -4,17 +4,6 @@ const title = decodeURIComponent(lst[0].substring(lst[0].indexOf('=')+1));
 const type = decodeURIComponent(lst[1].substring(lst[1].indexOf('=')+1));
 const id = lst[2].substring(lst[2].indexOf('t'));
 
-async function get_data(){
-    const response = await fetch('./src_syn/src_data_syn.json').catch(err => console.error(err));
-	const data = await response.json();
-
-    console.log(lst); //data test
-	console.log(data); //data test
-
-	show(data);
-}
-//fungsi di atas percobaan
-
 const options = {
 	method: 'GET',
 	headers: {
@@ -23,7 +12,6 @@ const options = {
 	}
 };
 
-/*
 async function get_data(){
 	let url = `https://imdb8.p.rapidapi.com/title/get-synopses?tconst=${id}`;
 
@@ -33,8 +21,6 @@ async function get_data(){
 
 	show(data);
 }
-*/
-//fungsi di atas fix
 
 function show(data) {
     if(data.length){
@@ -54,7 +40,8 @@ function show(data) {
                             <b>${profanity}</b>
                         </div>
                         <p id="syn_text">&emsp;&emsp;${synopsis}</p>
-                    </div>`;
+                    </div>
+                    <hr>`;
             }
         }
     }

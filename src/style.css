@@ -71,12 +71,11 @@ button{
     padding: 8px;
     padding-bottom: 11px;
     font-size: 17px;
-    transition: .1s;
 }
 
 button:hover, #btn_select:hover{
     cursor: pointer;
-    transform: scale(1.25);
+    background-color: #f74d4d;
 }
 
 button:active, #submit_query:active, #btn_select:active{
@@ -147,7 +146,6 @@ img{
     padding: 8px;
     padding-bottom: 11px;
     font-size: 17px;
-    transition: .1s;
 }
 
 #type{
