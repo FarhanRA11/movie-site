@@ -5,6 +5,7 @@
 body{
     background-color: #1d1b1b;
     color: #dcdcdc;
+    min-width: 200px;
 }
 
 header{
@@ -12,16 +13,12 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 #logo{
     border: none;
     max-width: 250px;
-}
-
-#name{
-    font-size: 50px;
-    align-items: baseline;
 }
 
 #query{
@@ -74,15 +71,15 @@ button{
     padding: 8px;
     padding-bottom: 11px;
     font-size: 17px;
-    transition: .2s;
+    transition: .1s;
 }
 
-button:hover{
+button:hover, #btn_select:hover{
     cursor: pointer;
     transform: scale(1.25);
 }
 
-button:active, #submit_query:active{
+button:active, #submit_query:active, #btn_select:active{
     background-color: #a12a2a;
     border: none;
 }
@@ -108,7 +105,7 @@ button:active, #submit_query:active{
     align-items: center;
 }
 
-.container{
+#container{
     margin: 10px;
     max-width: 180px;
     height: 100%;
@@ -131,7 +128,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px 20px 10px 30px;
+    padding: 10px 30px 10px 30px;
 }
 
 #title{
@@ -139,12 +136,22 @@ img{
     font-style: oblique;
 }
 
-#type{
-    font-size: 21px;
+#btn_select{
+    margin: 10px 0px 10px 0px;
+    background-color: #da4141;
+    color: #dcdcdc;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+    border: none;
+    padding: 8px;
+    padding-bottom: 11px;
+    font-size: 17px;
+    transition: .1s;
 }
 
-#id{
-    font-size: 12px;
+#type{
+    font-size: 21px;
 }
 
 a{
@@ -210,7 +217,11 @@ footer{
 }
 
 @media only screen and (max-width: 400px) {
-    .container{
+    #logo{
+        min-width: 200px;
+    }
+    
+    #container{
         width: 108px;
     }
 
@@ -228,10 +239,6 @@ footer{
 
     #type{
         font-size: 12.6px;
-    }
-    
-    #id{
-        font-size: 7.2px;
     }
 
     button{

@@ -5,13 +5,14 @@
 body{
     background-color: #1d1b1b;
     color: #dcdcdc;
+    min-width: 405px;
 }
 
 header{
     display: flex;
     flex-direction: row;
     margin: 10px 150px 10px 150px;
-    
+    align-items: center;
 }
 
 img{
@@ -58,11 +59,7 @@ img{
     font-size: 27px;
 }
 
-#id{
-    font-size: 16px;
-}
-
-#info{
+#warning{
     text-align: right;
     font-size: 24px;
     margin: 0px 150px 0px 150px;
@@ -103,10 +100,9 @@ a{
         align-items: center;
     }
 
-    #info{
+    #warning{
         margin: 20px;
     }
-
 
     #syn_text{
         margin: 10px;
@@ -118,7 +114,7 @@ a{
         padding: 15px;
     }
 
-    #info{
+    #warning{
         font-size: 17px;
     }
 }
@@ -131,9 +127,5 @@ a{
 
     #type{
         font-size: 15px;
-    }
-    
-    #id{
-        font-size: 12px;
     }
 }

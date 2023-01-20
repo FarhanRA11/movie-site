@@ -1,13 +1,15 @@
-let urlSegment = window.location.search
-let lst = urlSegment.substring(urlSegment.indexOf('?')+1).split('&');
-var title = decodeURIComponent(lst[0].substring(lst[0].indexOf('=')+1));
-var type = decodeURIComponent(lst[1].substring(lst[1].indexOf('=')+1));
-var id = lst[2].substring(lst[2].indexOf('=')+1);
+const urlSegment = window.location.search;
+const lst = urlSegment.substring(urlSegment.indexOf('?')+1).split('&');
+const title = decodeURIComponent(lst[0].substring(lst[0].indexOf('=')+1));
+const type = decodeURIComponent(lst[1].substring(lst[1].indexOf('=')+1));
+const id = lst[2].substring(lst[2].indexOf('t'));
 
 async function get_data(){
     const response = await fetch('./src_syn/src_data_syn.json').catch(err => console.error(err));
-	let data = await response.json();
-	console.log(data);
+	const data = await response.json();
+
+    console.log(lst); //data test
+	console.log(data); //data test
 
 	show(data);
 }
@@ -36,7 +38,7 @@ async function get_data(){
 
 function show(data) {
     if(data.length){
-        for(let i=0; i>=0; i++){
+        for(let i=0; i<data.length; i++){
             let language = data[i].language;
             let profanity = '';
             let synopsis = data[i].text;
@@ -45,19 +47,23 @@ function show(data) {
                 profanity = 'profanity warning!';
             }
             
-            document.getElementById('syn_result').innerHTML += 
-                `<div id="body_tab">
-                    <div id="info">
-                        <div>language: ${language}</div>
-                        <div id="warning"><b>${profanity}</b></div>
-                    </div>
-                    <p id="syn_text">&emsp;&emsp;${synopsis}</p>
-                </div>`;
+            if(language == 'eng'){
+                document.getElementById('syn_result').innerHTML += 
+                    `<div id="body_tab">
+                        <div id="warning">
+                            <b>${profanity}</b>
+                        </div>
+                        <p id="syn_text">&emsp;&emsp;${synopsis}</p>
+                    </div>`;
+            }
         }
-    }else{
+    }
+    
+    if(document.getElementById('syn_result').innerHTML == ''){
         document.getElementById('syn_result').textContent = `synopsis for ${title} is not currently available`;
         document.getElementById('syn_result').style.textAlign = 'center';
         document.getElementById('syn_result').style.marginTop = '100px';
+        document.getElementById('syn_result').style.color = 'rgb(255,0,0)'
     }
 }
 
@@ -65,7 +71,6 @@ window.onload = function(){
 	document.title = 'Synopsis: ' + title;
     document.getElementById('title').textContent = title;
     document.getElementById('type').textContent = type;
-    document.getElementById('id').textContent = id;
 
     get_data();
 }

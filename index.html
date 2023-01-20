@@ -15,7 +15,7 @@
         <img src="./src/logo_fix.png" alt="movie-site" id="logo">
         <div id="query">
             <input type="text" id="input_query" placeholder="title">
-            <button id="submit_query"">
+            <button id="submit_query" onclick="search_btn()">
                 <img src="./src/search_fix.png" alt="Q" id="search_logo">
             </button>
         </div>
@@ -29,5 +29,16 @@
         logo maker</u></a><br>
         designed by: @FarhanRA11<br>
     </footer>
+
+    <script>
+        function search_btn(){
+            query = String(document.getElementById('input_query').value);
+
+            if(query.replaceAll(' ', '').length){
+                alert(`search "${query}" success`);
+                window.location = `index.html?${query}`;
+            }
+        }
+    </script>
 </body>
 </html>
