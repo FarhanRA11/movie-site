@@ -1,8 +1,8 @@
 const urlSegment = window.location.search;
 const lst = urlSegment.substring(urlSegment.indexOf('?')+1).split('&');
 const title = decodeURIComponent(lst[0].substring(lst[0].indexOf('=')+1));
-const type = decodeURIComponent(lst[1].substring(lst[1].indexOf('=')+1));
-const id = lst[2].substring(lst[2].indexOf('t'));
+const type = decodeURIComponent(lst[1].substring(lst[1].indexOf('=')+1)).split('-');
+const id = lst[2].substring(3);
 
 const options = {
 	method: 'GET',
@@ -23,8 +23,9 @@ async function get_data(){
 }
 
 function show(data) {
-    if(data.length){
-        for(let i=0; i<data.length; i++){
+    const quantity = data.length;
+    if(quantity){
+        for(let i=0; i<quantity; i++){
             let language = data[i].language;
             let profanity = '';
             let synopsis = data[i].text;
@@ -50,14 +51,14 @@ function show(data) {
         document.getElementById('syn_result').textContent = `synopsis for ${title} is not currently available`;
         document.getElementById('syn_result').style.textAlign = 'center';
         document.getElementById('syn_result').style.marginTop = '100px';
-        document.getElementById('syn_result').style.color = 'rgb(255,0,0)'
+        document.getElementById('syn_result').style.color = 'rgb(218, 65, 65)';
     }
 }
 
 window.onload = function(){
 	document.title = 'Synopsis: ' + title;
     document.getElementById('title').textContent = title;
-    document.getElementById('type').textContent = type;
+    document.getElementById('type').textContent = `${type[0]} (${type[1]})`;
 
     get_data();
 }

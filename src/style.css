@@ -104,7 +104,7 @@ button:active, #submit_query:active, #btn_select:active{
     align-items: center;
 }
 
-#container{
+.container{
     margin: 10px;
     max-width: 180px;
     height: 100%;

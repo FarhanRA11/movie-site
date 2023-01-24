@@ -33,9 +33,7 @@
     <script>
         function search_btn(){
             query = String(document.getElementById('input_query').value);
-
             if(query.replaceAll(' ', '').length){
-                alert(`search "${query}" success`);
                 window.location = `index.html?${query}`;
             }
         }

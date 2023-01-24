@@ -1,5 +1,6 @@
 const urlSegment = window.location.search;
 const segmentQuery = decodeURIComponent(urlSegment.substring(urlSegment.indexOf('?')+1));
+const types = ['movie', 'tvSeries', 'short', 'tvMiniSeries', 'tvMovie', 'tvSpecial', 'tvShort', 'podcastSeries'];
 
 function empty(){
 	document.getElementById('result').innerHTML = '';
@@ -31,24 +32,26 @@ async function get_data(){
 }
 
 function show(data) {
-	if(data.length){
-		for(let i=0; i<data.length; i++){
-			if(String(data[i].id).includes('title')){
-				let title = String(data[i].title);
-				let type = `${data[i].year} ${data[i].titleType}`;
-				let title_id = String(data[i].id).slice(7,-1);
+	const quantity = data.length;
+	if(quantity){
+		for(let i=0; i<quantity; i++){
+			if(String(data[i].id).includes('title') && types.includes(data[i].titleType) && 'year' in data[i]){
+				let title_id = data[i].id.slice(7,-1);
+				let title = data[i].title;
+				let type = data[i].titleType;
+				let year = data[i].year;
 
 				document.getElementById('result').innerHTML += 
 					`<div id="tab">
-						<div id="container" id="container${i}">
+						<div class="container" id="container${i}">
 							<img src="" alt="image" id="image${i}">
 						</div>
 						
 						<div id="desc">
 							<div id="title">${title}</div>
-							<div id="type">${type}</div>
+							<div id="type">${type} (${year})</div>
 							
-							<a href="./syn.html?title=${title}&type=${type}&id=${title_id}" target="_blank" id="btn_select">
+							<a href="./syn.html?title=${title}&type=${type}-${year}&id=${title_id}" target="_blank" id="btn_select">
 								synopsis
 							</a>
 						</div>
@@ -66,7 +69,7 @@ function show(data) {
 		document.getElementById('result').textContent = 'no result';
 		document.getElementById('result').style.textAlign = 'center';
 		document.getElementById('result').style.fontSize = '30px';
-		document.getElementById('result').style.color = 'rgb(255,0,0)';
+		document.getElementById('result').style.color = 'rgb(218, 65, 65)';
 	}
 }
 
